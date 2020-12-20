@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Audio Player</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="head">Music</div>
+
+    <div class="container">
+        <div class="songName">Imperial March</div>
+        <div class="artistName">John Williams - Remix</div>
+        <audio preload="metadata" id="audio" class="audio">
+            <source src="Assets/black_boss_final_loop.mp3">
+        </audio>
+        <div class="bars">
+            <span class="currentTime">0:00</span>
+            <span class="totalTime"></span>
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+        </div>
+    </div>
+
+    <div onclick="changeState()" class="buttonPlay">&#9658;</div>
+    <div class="buttonPause">&#9612;&#9612;</div>
+    <canvas id="canvas"></canvas>
+</body>
+<script src="sketch.js" type="text/javascript">
+</script>
+
+
+</html>

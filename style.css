@@ -1,0 +1,120 @@
+@font-face {
+    font-family: GrandHotel;
+    src: url("Assets/GrandHotel-Regular.ttf");
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url("Assets/HelveticaNeue-Regular.otf");
+}
+
+
+body {
+    background-color: #010101;
+}
+
+.head {
+    position: absolute;
+    left: 46vw;
+    color: white;
+    font-size: 90px;
+    font-family: GrandHotel;
+    text-shadow: 0 0 90px #fff,
+        0 0 135px #fff;
+}
+
+.container {
+    width: 25vw;
+    height: 15vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 0 135px rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    font-family: HelveticaNeue;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.songName {
+    font-weight: 700;
+    font-size: 30px;
+    color: #282828;
+    margin-left: 10px;
+}
+
+.artistName {
+    color: #a8a3a3;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.bars {
+    margin-left: 10px;
+    margin-top: 40px;
+    /*width: 95%;*/
+}
+
+.currentTime {
+    color: #f54346;
+}
+
+.totalTime {
+    margin-left: 80%;
+}
+
+.bar1 {
+    background-color: #f5434650;
+    width: 95%;
+    height: 10px;
+    border-radius: 6px;
+    margin-top: 1px;
+}
+
+.bar2 {
+    background-color: #f54346;
+    margin-top: -10px;
+    width: 0%;
+    height: 10px;
+    border-radius: 6px;
+
+}
+
+.buttonPlay {
+    color: #a8a3a380;
+    position: absolute;
+    left: 49%;
+    bottom: 10%;
+    font-size: 67.5px;
+    user-select: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.buttonPlay:hover {
+    color: #a8a3a3;
+    text-shadow: 0 0 90px #a8a3a3,
+        0 0 135px #a8a3a3;
+}
+
+/*.buttonPause {
+    color: #a8a3a380;
+    position: absolute;
+    left: 49%;
+    bottom: 13.5%;
+    font-size: 45px;
+    user-select: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+.buttonPause:hover {
+    color: #a8a3a3;
+    text-shadow: 0 0 90px #a8a3a3,
+        0 0 135px #a8a3a3;
+}*/
